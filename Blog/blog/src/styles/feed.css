@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/* article card */
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.cardImg img {
+  width: 100%;
+  min-width: 200px;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.articleCardTagsList {
+  display: flex;
+}
+
+.articleCardTagsList div {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.blogName {
+  font-weight: normal;
+}
+
+.articleTitle {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.articleSubtitle {
+  font-weight: bold;
+}
+
+.articleText {
+  margin: 15px 0;
+  text-align: justify;
+}
+
+.tags,
+.timeInfo {
+  font-size: 14px;
+}
+
+/* feed */
+
+.feedBody {
+  display: flex;
+}
+
+.articlesList {
+  overflow: hidden;
+  margin-top: 60px;
+  margin-left: 120px;
+}
+
+.articlesList::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  padding: 7px;
+  z-index: 1000;
+}
+
+.headerButtons {
+  flex-wrap: nowrap;
+}
+
+.logo {
+  justify-self: flex-start;
+  font-size: 24px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* create article */
+.createArticleForm {
+  margin: 120px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createArticleForm > * {
+  margin: 5px;
+}
+
+.articleTextInput {
+  width: 860px;
+  height: 400px;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.articleTitleInput,
+.articleImgSrcInput,
+.articleTagsInput {
+  width: 860px;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.articleTitleInput input:focus {
+  outline-color: #000;
+}
+
+.infoMessage {
+  display: flex;
+  height: 20px;
+  flex-direction: column;
+  width: 860px;
+  font-size: 18px;
+  color: red;
+}
+
+.articlePublishButton {
+  display: flex;
+  flex-direction: column;
+  width: 860px;
+}
+
+.articlePublishButton button {
+  font-size: 18px;
+  color: #fff;
+  background: #000;
+  width: 120px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.articlePublishButton button:hover {
+  cursor: pointer;
+  background: #2e3033;
+}
+
+/* HEADER*/
+
+.headerButtons {
+  margin: 0 10px;
+}
+
+.headerButtons a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*filters*/
+.filters {
+  width: 1500px;
+  margin: 70px 60px 0 60px;
+}
+
+.filters_header {
+  font-size: 20px;
+}
+
+.filter_list {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* sign in page*/
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signInForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formInput {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.formInput input {
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.signInButton {
+  font-size: 18px;
+  color: #fff;
+  background: #000;
+  width: 120px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  align-self: center;
+}
+
+.signInButton:hover {
+  cursor: pointer;
+  background: #2e3033;
+}
+
+.formLink {
+  align-self: center;
+}
+
+.formLink a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.ErrorMessage {
+  text-align: start;
+  margin: 0 100px;
+  color: red;
+}
+
+/* dashboard*/
+
+.tabPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articlesInfoList {
+}
+
+.articlesInfoList::-webkit-scrollbar {
+  display: none;
+}
+.showLinkButton {
+  color: #000;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.userCardImg img {
+  width: 100%;
+  min-width: 150px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.button {
+  font-size: 18px;
+  color: #fff;
+  background: #000;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #2e3033;
+}
+
+.addTagInput {
+  padding: 7px;
+}
+
+.inputLabel {
+  font-size: 18px;
+}
+/*tags*/
+.tags {
+  width: 500px;
+  margin: 50px 0;
+}
+
+.tag_list {
+  padding-top: 10px;
+  border-top: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+}

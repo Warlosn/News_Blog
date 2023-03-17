@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  blog_server:
+    container_name: blog_server
+    build: Dockerfile
+    ports:
+      - 3004:3004
+    env_file:
+      - app.env
+    depends_on:
+      - psql
+  
+  psql:
+    container_name: blog_db
+    image: mongo:latest
+    restart: always
+    ports: 
+      - 27017:27017
